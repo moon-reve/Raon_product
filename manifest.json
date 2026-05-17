@@ -1,0 +1,18 @@
+{
+  "name": "라온 (RAON)",
+  "short_name": "라온",
+  "description": "라온 프라이드 굿즈 스토어",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#EFF5FF",
+  "theme_color": "#004ED4",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
