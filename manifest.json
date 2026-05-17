@@ -5,11 +5,11 @@
   "start_url": "/",
   "display": "standalone",
   "orientation": "portrait",
-  "background_color": "#EFF5FF",
+  "background_color": "#FFFFFF",
   "theme_color": "#004ED4",
   "icons": [
     {
-      "src": "/logo.png",
+      "src": "/logo_square.png",
       "sizes": "any",
       "type": "image/png",
       "purpose": "any maskable"

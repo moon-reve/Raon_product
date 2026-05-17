@@ -13,7 +13,10 @@
       "Bash(git commit *)",
       "Bash(git branch *)",
       "Bash(git remote *)",
-      "Bash(git push *)"
+      "Bash(git push *)",
+      "Bash(sips -g pixelWidth -g pixelHeight /Users/moonsoomin/Desktop/MoonSM/raon_product_html/logo.png)",
+      "Bash(pip3 install *)",
+      "Bash(python3 -c ' *)"
     ]
   }
 }
