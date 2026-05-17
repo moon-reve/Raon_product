@@ -4,23 +4,24 @@
   padding: 0;
 }
 
-html, body {
+html {
   width: 100%;
-  max-width: 100%;
   overflow-x: hidden;
 }
 
 body {
+  width: 100%;
+  overflow-x: hidden;
   background: #EFF5FF;
   font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 .page {
+  position: relative;
   width: 100%;
-  max-width: 100%;
   min-height: 100vh;
   background: #EFF5FF;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 /* ── Main ── */
