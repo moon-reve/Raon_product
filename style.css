@@ -152,8 +152,15 @@ body {
 .label-cell.selected {
   background: #004ED4;
   color: #FFFFFF;
-  font-size: 14px;
   font-weight: 600;
+}
+
+@media (max-width: 370px) {
+  .label-cell,
+  .label-cell.size-14,
+  .label-cell.size-13 {
+    font-size: 12px;
+  }
 }
 
 /* ── More Button (Labels) ── */
