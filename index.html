@@ -384,7 +384,7 @@ const products = [
             </svg>
           </button>
           <!-- Cart -->
-          <button class="cart-btn" aria-label="장바구니">
+          <button class="cart-btn" aria-label="장바구니" onclick="location.href='cart.html'">
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M2.5 3.5H4.5L6.2 12.5H15.8L17.5 6.5H5.5" stroke="#1A1B22" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
               <circle cx="8" cy="16" r="1.2" fill="#1A1B22"/>
@@ -514,7 +514,7 @@ const products = [
         ? `<span class="price-sale">${p.price}</span><span class="price-orig">${p.origPrice}</span>`
         : `<span>${p.price}</span>`;
       return `
-        <div class="product-card${p.soldOut ? ' is-soldout' : ''}">
+        <div class="product-card${p.soldOut ? ' is-soldout' : ''}" data-id="${p.id}">
           <div class="img-box">
             <img src="${imgSrc}" alt="${p.title}" loading="lazy">
             ${badge}
@@ -522,6 +522,7 @@ const products = [
           <div class="text-box">
             <div class="product-title">${p.title}</div>
             <div class="product-price">${priceHtml}</div>
+            ${!p.soldOut ? `<button class="add-cart-btn" onclick="addToCart('${p.id}')">+ 담기</button>` : ''}
           </div>
         </div>`;
     }
@@ -561,6 +562,7 @@ const products = [
 
     document.addEventListener('DOMContentLoaded', () => {
       renderProducts(products);
+      updateCartBadge();
 
       document.getElementById('labelGrid').addEventListener('click', (e) => {
         const cell = e.target.closest('.label-cell');
@@ -583,19 +585,43 @@ const products = [
       });
     });
 
+    // ── Cart ──────────────────────────────────────────────────
+    function getCart() {
+      try { return JSON.parse(localStorage.getItem('raon_cart') || '[]'); }
+      catch { return []; }
+    }
+    function saveCart(cart) { localStorage.setItem('raon_cart', JSON.stringify(cart)); }
+
     function updateCartBadge() {
       const badge = document.getElementById('cartBadge');
-      if (cartCount > 0) {
-        badge.textContent = cartCount;
+      const count = getCart().length;
+      if (count > 0) {
+        badge.textContent = count;
         badge.classList.add('visible');
       } else {
         badge.classList.remove('visible');
       }
     }
 
-    function addToCart() {
-      cartCount++;
+    function addToCart(id) {
+      const p = products.find(x => x.id === id);
+      if (!p) return;
+      const cart = getCart();
+      const existing = cart.find(i => i.id === id);
+      if (existing) {
+        existing.qty = (existing.qty || 1) + 1;
+      } else {
+        cart.push({ ...p, cartId: id + '_' + Date.now(), qty: 1 });
+      }
+      saveCart(cart);
       updateCartBadge();
+
+      // 간단한 피드백
+      const btn = document.querySelector(`[data-id="${id}"] .add-cart-btn`);
+      if (btn) {
+        btn.textContent = '✓ 담겼어요';
+        setTimeout(() => { btn.textContent = '+ 담기'; }, 1200);
+      }
     }
 
     function toggleLabels() {
