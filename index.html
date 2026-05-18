@@ -553,6 +553,10 @@ const products = [
       redraw();
     }
 
+    // 홈으로 돌아올 때마다 뱃지 업데이트 (장바구니에서 삭제 후 반영)
+    window.addEventListener('pageshow', () => updateCartBadge());
+    window.addEventListener('focus', () => updateCartBadge());
+
     document.addEventListener('DOMContentLoaded', () => {
       renderProducts(products);
       updateCartBadge();
