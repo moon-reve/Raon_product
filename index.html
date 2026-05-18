@@ -471,7 +471,7 @@ const products = [
   <script>
     let labelsExpanded = false;
     let cartCount = 0;
-    let visibleCount = 6;
+    let visibleCount = 10;
     let currentList = [];
 
     const labelKeywords = {
@@ -556,7 +556,7 @@ const products = [
     }
 
     function loadMore() {
-      visibleCount += 6;
+      visibleCount += 10;
       redraw();
     }
 
