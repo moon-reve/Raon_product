@@ -25,7 +25,7 @@ const products = [
   { id:'raon_keys_nb',    title:'라온 프라이드 동글 키링 논바이너리',   price:'6,000원', img:'image_1777945839771_1000.jpg' },
   { id:'raon_keys_gq',    title:'라온 프라이드 동글 키링 젠더퀴어',     price:'6,000원', img:'image_1777945731054_1000.jpg' },
   { id:'raon_keys_ar',    title:'라온 프라이드 동글 키링 에이로맨틱',   price:'6,000원', img:'image_1777945564667_1000.jpg' },
-  { id:'raon_keys_a',     title:'라온 프라이드 동글 키링 에이섹슈얼',   price:'6,000원', img:'image_1777945471222_1000.jpg', soldOut:true },
+  { id:'raon_keys_a',     title:'라온 프라이드 동글 키링 에이섹슈얼',   price:'6,000원', img:'image_1777945471222_1000.jpg' },
   { id:'raon_keys_ag',    title:'라온 프라이드 동글 키링 에이젠더',      price:'6,000원', img:'image_1777945319389_1000.jpg' },
   { id:'raon_keys_tg',    title:'라온 프라이드 동글 키링 트랜스젠더',   price:'6,000원', img:'image_1777945248787_1000.jpg' },
   { id:'raon_keys_ds',    title:'라온 프라이드 동글 키링 데미섹슈얼',   price:'6,000원', img:'image_1777945109929_1000.jpg' },
@@ -57,7 +57,7 @@ const products = [
   { id:'RO2022_-legoneckless-GQ',       title:'라온 블럭 목걸이 - 젠더퀴어',  price:'13,000원', img:'image_1777891436527_1000.jpg' },
   { id:'RO2022_-legoneckless-AR',       title:'라온 블럭 목걸이 - 에이로맨틱',price:'13,000원', img:'image_1777891320877_1000.jpg' },
   { id:'RO2022_-legoneckless-Bi',       title:'라온 블럭 목걸이 - 바이',       price:'13,000원', img:'image_1777891215648_1000.jpg' },
-  { id:'RO2022_-legoneckless-L',        title:'라온 블럭 목걸이 - 레즈비언',   price:'13,000원', img:'image_1777890574307_1000.jpg', soldOut:true },
+  { id:'RO2022_-legoneckless-L',        title:'라온 블럭 목걸이 - 레즈비언',   price:'13,000원', img:'image_1777890574307_1000.jpg' },
   { id:'RO2022_-legoneckless-Demiboy',  title:'라온 블럭 목걸이 - 데미보이',   price:'13,000원', img:'image_1777890102734_1000.jpg' },
   { id:'RO2022_-legoneckless-Demigirl', title:'라온 블럭 목걸이 - 데미걸',     price:'13,000원', img:'image_1777889794626_1000.jpg' },
   { id:'RO2022_-legoneckless-Neutrois', title:'라온 블럭 목걸이 - 뉴트로이스', price:'13,000원', img:'image_1777889572755_1000.jpg' },
@@ -159,7 +159,7 @@ const products = [
   { id:'RAON_PridePlanet_seal_TG',      title:'라온 프라이드 플래닛 리무버블 스티커 트랜스젠더',       price:'2,000원', img:'image_1749390883396_1000.jpg' },
   { id:'RAON_PridePlanet_seal_GQ',      title:'라온 프라이드 플래닛 리무버블 스티커 젠더퀴어',         price:'2,000원', img:'image_1749390808457_1000.jpg' },
   { id:'RAON_PridePlanet_seal_AGender', title:'라온 프라이드 플래닛 리무버블 스티커 에이젠더',         price:'2,000원', img:'image_1749390710931_1000.jpg' },
-  { id:'RAON_PridePlanet_seal_N',       title:'라온 프라이드 플래닛 리무버블 스티커 논바이너리',       price:'2,000원', img:'image_1749390628118_1000.jpg', soldOut:true },
+  { id:'RAON_PridePlanet_seal_N',       title:'라온 프라이드 플래닛 리무버블 스티커 논바이너리',       price:'2,000원', img:'image_1749390628118_1000.jpg' },
   { id:'RAON_PridePlanet_seal_GF',      title:'라온 프라이드 플래닛 리무버블 스티커 젠더플루이드',     price:'2,000원', img:'image_1749390582388_1000.jpg' },
   { id:'RAON_PridePlanet_seal_AR',      title:'라온 프라이드 플래닛 리무버블 스티커 에이로맨틱',       price:'2,000원', img:'image_1749390455547_1000.jpg' },
   { id:'RAON_PridePlanet_seal_GR',      title:'라온 프라이드 플래닛 리무버블 스티커 그레이로맨틱',     price:'2,000원', img:'image_1749390233341_1000.jpg' },
@@ -264,7 +264,7 @@ const products = [
   // ── 하트 레인보우 뱃지 ────────────────────────────────────────────────────
   { id:'raon-538',     title:'라온 하트 레인보우 뱃지 트랜스젠더', price:'11,000원', img:'image_1718446207063_1000.png' },
   { id:'raon-536-537', title:'라온 하트 레인보우 뱃지 팬섹슈얼',  price:'11,000원', img:'image_1718446091680_1000.png' },
-  { id:'raon-536',     title:'라온 하트 레인보우 뱃지 바이섹슈얼',price:'11,000원', img:'image_1718445592127_1000.png', soldOut:true },
+  { id:'raon-536',     title:'라온 하트 레인보우 뱃지 바이섹슈얼',price:'11,000원', img:'image_1718445592127_1000.png' },
   { id:'raon0110',     title:'라온 하트 레인보우 뱃지 논바이너리', price:'11,000원', img:'image_1718445766396_1000.png' },
 
   // ── 기타 뱃지 ──────────────────────────────────────────────────────────────
@@ -282,7 +282,7 @@ const products = [
 
   // ── 프라이드 벨트 ──────────────────────────────────────────────────────────
   { id:'raon2023006',    title:'라온 프라이드 벨트 팬섹슈얼',    price:'28,000원', img:'image_1718443026505_1000.png' },
-  { id:'raon202300-524', title:'라온 프라이드 벨트 에이로맨틱',  price:'28,000원', img:'image_1718442893124_1000.png', soldOut:true },
+  { id:'raon202300-524', title:'라온 프라이드 벨트 에이로맨틱',  price:'28,000원', img:'image_1718442893124_1000.png' },
   { id:'raon2023004',    title:'라온 프라이드 벨트 트랜스젠더',  price:'28,000원', img:'image_1718442772323_1000.png' },
   { id:'raon2023003',    title:'라온 프라이드 벨트 게이(MLM)',    price:'28,000원', img:'image_1718442535224_1000.png' },
   { id:'raon2024002',    title:'라온 프라이드 벨트 에이섹슈얼',  price:'28,000원', img:'image_1718442391555_1000.png' },
@@ -297,14 +297,14 @@ const products = [
   { id:'RO2023earing',    title:'[라온] 프라이드 원형 귀걸이 15종',    price:'5,000원',  img:'image_1687774734750_1000.png' },
   { id:'RO2023rain',      title:'[라온] 무지개 우비',                   price:'18,000원', img:'image_1687774557573_1000.png' },
   { id:'RO2003reel',      title:'[라온] 프라이드 뱃지릴 9종',           price:'7,000원',  img:'image_1687774202930_1000.png' },
-  { id:'ROpridecross',    title:'라온 프라이드 크로스백',               price:'25,000원', img:'image_1652078686171_1000.png', soldOut:true },
+  { id:'ROpridecross',    title:'라온 프라이드 크로스백',               price:'25,000원', img:'image_1652078686171_1000.png' },
   { id:'RO2023001',       title:'[라온] 레인보우 실리콘 팔찌 5종',      price:'5,000원',  img:'image_1687174826311_1000.jpg' },
   { id:'RO2023_minipots', title:'[라온] 미니 도자기 화분 7종',          price:'15,000원', img:'image_1687172067744_1000.jpg' },
 
   // ── 도자기/식기 ────────────────────────────────────────────────────────────
   { id:'RO2022_tree3',  title:'[라온] 젠더퀴어 트리 접시',          price:'42,000원', img:'image_1670824368895_1000.jpg' },
   { id:'RO2022_tree2',  title:'[라온] 무지개 트리 접시 ver.2',      price:'42,000원', img:'image_1670824211632_1000.jpg' },
-  { id:'RO2022_tree1',  title:'[라온] 무지개 트리 접시',             price:'42,000원', img:'image_1670823942340_1000.jpg', soldOut:true },
+  { id:'RO2022_tree1',  title:'[라온] 무지개 트리 접시',             price:'42,000원', img:'image_1670823942340_1000.jpg' },
 
   // ── 띠깃발 (2022) ──────────────────────────────────────────────────────────
   { id:'RO2022_long011', title:'[라온] 띠깃발 프로그레스 프라이드', price:'12,000원', img:'image_1663916992959_1000.jpg' },
@@ -320,26 +320,26 @@ const products = [
   { id:'RO2022_long001', title:'[라온] 띠깃발 에이젠더 프라이드',   price:'12,000원', img:'image_1663915574031_1000.jpg' },
 
   // ── 컵/주병/버너 ───────────────────────────────────────────────────────────
-  { id:'RO2022_cupag',          title:'[라온] 손잡이 없는 긴 컵 에이젠더',     price:'18,000원', img:'image_1660643418219_1000.jpg', soldOut:true },
+  { id:'RO2022_cupag',          title:'[라온] 손잡이 없는 긴 컵 에이젠더',     price:'18,000원', img:'image_1660643418219_1000.jpg' },
   { id:'RO2022_cupnt',          title:'[라온] 손잡이 없는 긴 컵 뉴트로이스',   price:'18,000원', img:'image_1660642047574_1000.jpg' },
   { id:'RO2022_pridebottlesrb', title:'[라온] 도자기 주병 레인보우 세트',      price:'49,000원', img:'image_1658730737441_1000.jpg' },
   { id:'RO2022_pridebottlesnon',title:'[라온] 도자기 주병 논바이너리 세트',    price:'49,000원', img:'image_1658730560361_1000.jpg' },
   { id:'RO2022_pridebottlesbi', title:'[라온] 도자기 주병 바이섹슈얼 세트',    price:'49,000원', img:'image_1658730470645_1000.jpg' },
   { id:'RO2022_pridebottlesa',  title:'[라온] 도자기 주병 에이섹슈얼 세트',    price:'49,000원', img:'image_1658730349364_1000.jpg' },
   { id:'RO2022_cupbi',          title:'[라온] 손잡이 없는 긴 컵 바이섹슈얼',   price:'18,000원', img:'image_1660641863372_1000.jpg' },
-  { id:'RO2022_aumb',           title:'[라온] 무지개 우산&비니 세트',           price:'38,000원', img:'image_1659007204195_1000.jpg', soldOut:true },
+  { id:'RO2022_aumb',           title:'[라온] 무지개 우산&비니 세트',           price:'38,000원', img:'image_1659007204195_1000.jpg' },
   { id:'RO2022_burner',         title:'[라온] 무지개 티라이트 오일 버너',       price:'32,000원', img:'image_1658726845892_1000.jpg' },
-  { id:'RO2022_cuprb',          title:'[라온] 손잡이 없는 긴 컵 레인보우',      price:'18,000원', img:'image_1658729089558_1000.jpg', soldOut:true },
+  { id:'RO2022_cuprb',          title:'[라온] 손잡이 없는 긴 컵 레인보우',      price:'18,000원', img:'image_1658729089558_1000.jpg' },
   { id:'RO2022_pridebottles',   title:'[라온] 프라이드 주병&잔 세트 5종',      price:'49,000원', img:'image_1652078026304_1000.png' },
   { id:'RO2022_cupa',           title:'[라온] 손잡이 없는 긴 컵 에이섹슈얼',   price:'18,000원', img:'image_1658728421061_1000.jpg' },
-  { id:'RO2022_flowerplate',    title:'[라온] 꽃접시',                           price:'38,000원', img:'image_1658729825436_1000.jpg', soldOut:true },
+  { id:'RO2022_flowerplate',    title:'[라온] 꽃접시',                           price:'38,000원', img:'image_1658729825436_1000.jpg' },
 
   // ── 반려동물/힙색/팔찌/키링 ───────────────────────────────────────────────
   { id:'rainbowhat',         title:'[라온] 반려동물의 무지개 뜨개모자', price:'15,000원', img:'image_1657725236916_1000.jpg' },
   { id:'rn2022_hipsack',     title:'[라온] 무지개 행성 힙색',           price:'35,000원', img:'image_1657725457706_1000.jpg' },
   { id:'rainbowcape',        title:'[라온] 반려동물의 무지개 케이프',   price:'15,000원', img:'image_1657725120394_1000.jpg' },
-  { id:'RO2022_285',         title:'[라온] 프라이드플래닛 가방',        price:'25,000원', img:'image_1652078686493_1000.png', soldOut:true },
-  { id:'RO2022_catplate',    title:'[라온] 고양이 접시',                 price:'42,000원', img:'image_1658729570651_1000.jpg', soldOut:true },
+  { id:'RO2022_285',         title:'[라온] 프라이드플래닛 가방',        price:'25,000원', img:'image_1652078686493_1000.png' },
+  { id:'RO2022_catplate',    title:'[라온] 고양이 접시',                 price:'42,000원', img:'image_1658729570651_1000.jpg' },
   { id:'RO2022_sil3',        title:'[라온] 실리콘 팔찌 Pansexual',      price:'5,000원',  img:'image_1657182484463_1000.jpg' },
   { id:'RO2022_sil2',        title:'[라온] 실리콘 팔찌 Bisexual',       price:'5,000원',  img:'image_1657182384864_1000.jpg' },
   { id:'RO2022_sil',         title:'[라온] 실리콘 팔찌 Rainbow',        price:'5,000원',  img:'image_1657182064962_1000.jpg' },
@@ -351,7 +351,7 @@ const products = [
   { id:'RO2022_knittingrainbow',title:'[라온] 무지개 뜨개실 옷핀',      price:'7,000원',  img:'image_1657178451185_1000.jpg' },
   { id:'raon2022_pridewraps',title:'[라온] 프라이드 아대 7종',           price:'7,000원',  img:'image_1652692684521_1000.png' },
   { id:'RO2022_283',         title:'[라온] 무지개 식기세트(밥그릇, 국그릇)', price:'35,000원', img:'image_1652077713120_1000.png' },
-  { id:'RO2022_serve',       title:'[라온] 프라이드 수저 세트',          price:'7,000원',  img:'image_1652077401875_1000.png', soldOut:true },
+  { id:'RO2022_serve',       title:'[라온] 프라이드 수저 세트',          price:'7,000원',  img:'image_1652077401875_1000.png' },
   { id:'RO2022_hats',        title:'[라온] 프라이드플래닛 빅사이즈 버킷햇', price:'32,000원', img:'image_1652076673551_1000.png' },
 
   // ── 도자기/머그 (2021) ─────────────────────────────────────────────────────
@@ -367,7 +367,7 @@ const products = [
   { id:'RN2021_dragonstk',  title:'라온 퀴어용 스티커',            price:'2,500원',  img:'image_1617952981309_1000.jpg' },
   { id:'RN2021_dragonmemo', title:'라온 퀴어용 메모장',            price:'7,000원',  img:'image_1617952847285_1000.jpg' },
   { id:'RN2021_msktg',      title:'라온 트랜스젠더 플래그 마스크', price:'2,500원',  img:'image_1617354777901_1000.jpg' },
-  { id:'RN2021_plnearing',  title:'라온 행성 귀걸이',               price:'9,000원',  img:'image_1611543988718_1000.jpg', soldOut:true },
+  { id:'RN2021_plnearing',  title:'라온 행성 귀걸이',               price:'9,000원',  img:'image_1611543988718_1000.jpg' },
   { id:'RN2021_dragon',     title:'라온 무지개 용뱃지',             price:'13,000원', img:'image_1625811743888_1000.jpg' },
   { id:'RN2021_toyring',    title:'라온 토이 체인 키링 4종',        price:'2,500원',  img:'image_1626072201362_1000.jpg' },
 
@@ -394,7 +394,7 @@ const products = [
   { id:'planetearring',       title:'라온 프라이드플래닛 귀걸이/귀찌',       price:'8,000원',  img:'image_1570503589922_1000.png' },
   { id:'knotbrslt',           title:'라온 전통매듭팔찌 3종',                  price:'8,000원',  img:'image_1565679286178_1000.jpg' },
   { id:'raonpostcard',        title:'라온 프라이드플래닛 엽서 4종',           price:'1,500원',  img:'image_1565230620467_1000.jpg' },
-  { id:'glasses',             title:'라온 안경 프레임',                        price:'4,000원',  img:'image_1564727698786_1000.jpg', soldOut:true },
+  { id:'glasses',             title:'라온 안경 프레임',                        price:'4,000원',  img:'image_1564727698786_1000.jpg' },
   { id:'untitled-90',         title:'라온 레인보우 속성뱃지 4종',             price:'15,000원', img:'image_1560999871506_1000.png' },
   { id:'fushtape5',           title:'라온 마스킹테이프 (후시아)',              price:'3,000원',  origPrice:'4,000원', img:'image_1581670400309_1000.jpg', onSale:true },
   { id:'cattape5',            title:'라온 마스킹테이프 (고양이)',              price:'3,000원',  origPrice:'4,000원', img:'image_1581670241156_1000.jpg', onSale:true },
