@@ -29,8 +29,8 @@
 
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
   <link href="https://cdn.jsdelivr.net/npm/pretendard@latest/dist/web/static/pretendard.css" rel="stylesheet" />
-  <script src="products.js?v=4"></script>
-  <link rel="stylesheet" href="style.css?v=3">
+  <script src="products.js?v=7"></script>
+  <link rel="stylesheet" href="style.css?v=7">
 </head>
 <body>
   <div class="page">
@@ -229,7 +229,7 @@
         if (entries[0].isIntersecting && visibleCount < currentList.length) {
           loadMore();
         }
-      }, { rootMargin: '300px' }); // 바닥에 닿기 300px 전에 미리 로드
+    }, { rootMargin: '0px' }); // 바닥에 완전히 닿았을 때 로드
       observer.observe(document.getElementById('scrollSentinel'));
 
       document.getElementById('labelGrid').addEventListener('click', (e) => {
