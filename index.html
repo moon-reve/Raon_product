@@ -118,9 +118,8 @@
       <!-- ── Contents ── -->
       <section class="contents" id="productGrid"></section>
 
-      <button class="contents-more-btn" id="contentsMoreBtn" onclick="loadMore()">
-        <span class="contents-more-text">더보기</span>
-      </button>
+      <!-- 무한 스크롤 감지용 센티널 (보이지 않음) -->
+      <div id="scrollSentinel" style="height: 1px;"></div>
 
     </div>
   </div>
@@ -190,7 +189,7 @@
       const grid = document.getElementById('productGrid');
       if (!list.length) {
         grid.innerHTML = '<p style="text-align:center;padding:40px 0;color:#5F5E61;">상품이 없습니다.</p>';
-        document.getElementById('contentsMoreBtn').style.display = 'none';
+        document.getElementById('scrollSentinel').style.display = 'none';
         return;
       }
       redraw();
@@ -208,8 +207,8 @@
         html += '</div>';
       }
       grid.innerHTML = html;
-      document.getElementById('contentsMoreBtn').style.display =
-        visibleCount >= currentList.length ? 'none' : 'flex';
+      document.getElementById('scrollSentinel').style.display =
+        visibleCount >= currentList.length ? 'none' : 'block';
     }
 
     function loadMore() {
@@ -224,6 +223,14 @@
     document.addEventListener('DOMContentLoaded', () => {
       renderProducts(products);
       updateCartBadge();
+
+      // 무한 스크롤 (Intersection Observer) 설정
+      const observer = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting && visibleCount < currentList.length) {
+          loadMore();
+        }
+      }, { rootMargin: '300px' }); // 바닥에 닿기 300px 전에 미리 로드
+      observer.observe(document.getElementById('scrollSentinel'));
 
       document.getElementById('labelGrid').addEventListener('click', (e) => {
         const cell = e.target.closest('.label-cell');

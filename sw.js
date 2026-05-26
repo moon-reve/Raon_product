@@ -1,4 +1,4 @@
-const CACHE = 'raon-v2';
+const CACHE = 'raon-v5';
 const STATIC = ['/logo.png', '/logo_square.png'];
 
 self.addEventListener('install', e => {
