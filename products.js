@@ -120,7 +120,7 @@ const products = [
   { id:'RO2023fans-ARO', title:'라온 프라이드 손부채 에이로맨틱', price:'5,000원', img:'image_1779604808618_1000.jpg' },
   { id:'RO2023fans-Pan', title:'라온 프라이드 손부채 범성애', price:'5,000원', img:'image_1779604036594_1000.jpg' },
   { id:'RO2023fans_A', title:'라온 프라이드 손부채 무성애', price:'5,000원', img:'image_1779602741030_1000.jpg' },
-  { id:'RO_magnet_TG', title:'라온 타일 자석 무지개 트랜스젠더', price:'5,000원', img:'image_1780238219558_1000.jpg' },
+  { id:'RO_magnet_TG', title:'라온 타일 자석 트랜스젠더', price:'5,000원', img:'image_1780238219558_1000.jpg' },
   { id:'RO_magnet_P', title:'라온 타일 자석 팬섹슈얼', price:'5,000원', img:'image_1780238112253_1000.jpg' },
   { id:'RO_magnet', title:'라온 타일 자석 무지개', price:'5,000원', img:'image_1780237867309_1000.jpg' },
   { id:'raon_allyear_rb', title:'라온 퀴어올이어 뱃지 무지개', price:'12,000원', img:'image_1779595362860_1000.jpg' },
