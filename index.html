@@ -65,66 +65,103 @@
       </section>
 
       <!-- ── Section Label ── -->
-      <section class="section-label">
-        <div class="label-title">카테고리</div>
+      <section class="section-label" style="gap: 32px;">
 
-        <div class="label-grid" id="labelGrid">
-          <!-- Row 1: 항상 보임 -->
-          <div class="label-row">
-            <div class="label-cell size-14 selected">전체</div>
-            <div class="label-cell size-14">레인보우</div>
-            <div class="label-cell size-14">게이</div>
-            <div class="label-cell size-13">그레이로맨틱</div>
+        <!-- 플래그 필터 -->
+        <div style="display: flex; flex-direction: column; gap: 12px;">
+          <div class="label-title">플래그 (디자인)</div>
+          <div class="label-grid" id="flagGrid">
+            <div class="label-row">
+              <div class="label-cell size-14 selected" data-type="flag">전체</div>
+              <div class="label-cell size-14" data-type="flag">레인보우</div>
+              <div class="label-cell size-14" data-type="flag">게이</div>
+              <div class="label-cell size-13" data-type="flag">그레이로맨틱</div>
+            </div>
+            <div class="label-row">
+              <div class="label-cell size-13" data-type="flag">논바이너리</div>
+              <div class="label-cell size-13" data-type="flag">뉴트로이스</div>
+              <div class="label-cell size-14" data-type="flag">데미걸</div>
+              <div class="label-cell size-14" data-type="flag">데미보이</div>
+            </div>
+            <div class="label-row collapsed">
+              <div class="label-cell size-13" data-type="flag">레즈비언</div>
+              <div class="label-cell size-13" data-type="flag">바이섹슈얼</div>
+              <div class="label-cell size-13" data-type="flag">안드로진</div>
+              <div class="label-cell size-14" data-type="flag">앨라이</div>
+            </div>
+            <div class="label-row collapsed">
+              <div class="label-cell size-14" data-type="flag">에이로맨틱</div>
+              <div class="label-cell size-13" data-type="flag">에이로에이스</div>
+              <div class="label-cell size-13" data-type="flag">에이섹슈얼</div>
+              <div class="label-cell size-13" data-type="flag">에이젠더</div>
+            </div>
+            <div class="label-row collapsed">
+              <div class="label-cell size-14" data-type="flag">옴니섹슈얼</div>
+              <div class="label-cell size-14" data-type="flag">인터섹스</div>
+              <div class="label-cell size-13" data-type="flag">젠더리스</div>
+              <div class="label-cell size-13" data-type="flag">젠더퀴어</div>
+            </div>
+            <div class="label-row collapsed">
+              <div class="label-cell size-14" data-type="flag">젠더플럭스</div>
+              <div class="label-cell size-13" data-type="flag">젠더플루이드</div>
+              <div class="label-cell size-14" data-type="flag">퀘스쳐너리</div>
+              <div class="label-cell size-13" data-type="flag">트랜스젠더</div>
+            </div>
+            <div class="label-row collapsed">
+              <div class="label-cell size-13" data-type="flag">팬섹슈얼</div>
+              <div class="label-cell size-14" data-type="flag">폴리섹슈얼</div>
+              <div class="label-cell size-13" data-type="flag">폴리아모리</div>
+              <div class="label-cell size-14" data-type="flag">BDSM</div>
+            </div>
           </div>
-          <!-- Row 2: 항상 보임 -->
-          <div class="label-row">
-            <div class="label-cell size-13">논바이너리</div>
-            <div class="label-cell size-13">뉴트로이스</div>
-            <div class="label-cell size-14">데미걸</div>
-            <div class="label-cell size-14">데미보이</div>
-          </div>
-          <!-- Row 3: 접힘 -->
-          <div class="label-row collapsed">
-            <div class="label-cell size-13">레즈비언</div>
-            <div class="label-cell size-13">바이섹슈얼</div>
-            <div class="label-cell size-13">안드로진</div>
-            <div class="label-cell size-14">앨라이</div>
-          </div>
-          <!-- Row 4: 접힘 -->
-          <div class="label-row collapsed">
-            <div class="label-cell size-14">에이로맨틱</div>
-            <div class="label-cell size-13">에이로에이스</div>
-            <div class="label-cell size-13">에이섹슈얼</div>
-            <div class="label-cell size-13">에이젠더</div>
-          </div>
-          <!-- Row 5: 접힘 -->
-          <div class="label-row collapsed">
-            <div class="label-cell size-14">옴니섹슈얼</div>
-            <div class="label-cell size-14">인터섹스</div>
-            <div class="label-cell size-13">젠더리스</div>
-            <div class="label-cell size-13">젠더퀴어</div>
-          </div>
-          <!-- Row 6: 접힘 -->
-          <div class="label-row collapsed">
-            <div class="label-cell size-14">젠더플럭스</div>
-            <div class="label-cell size-13">젠더플루이드</div>
-            <div class="label-cell size-14">퀘스쳐너리</div>
-            <div class="label-cell size-13">트랜스젠더</div>
-          </div>
-          <!-- Row 7: 접힘 -->
-          <div class="label-row collapsed">
-            <div class="label-cell size-13">팬섹슈얼</div>
-            <div class="label-cell size-14">폴리섹슈얼</div>
-            <div class="label-cell size-13">폴리아모리</div>
-            <div class="label-cell size-14">BDSM</div>
-          </div>
+          <button class="label-more-btn" onclick="toggleLabels('flag')">
+            <span class="label-more-text" id="flagMoreText">더보기</span>
+            <span class="label-more-arrow" id="flagMoreArrow">▼</span>
+          </button>
         </div>
 
-        <!-- 더보기 버튼 -->
-        <button class="label-more-btn" id="labelMoreBtn" onclick="toggleLabels()">
-          <span class="label-more-text" id="labelMoreText">더보기</span>
-          <span class="label-more-arrow" id="labelMoreArrow">▼</span>
-        </button>
+        <!-- 제품 필터 -->
+        <div style="display: flex; flex-direction: column; gap: 12px;">
+          <div class="label-title">제품 (종류)</div>
+          <div class="label-grid" id="productLabelGrid">
+            <!-- 글자 짤림을 막기 위해 한 줄에 3개씩 배치 -->
+            <div class="label-row">
+              <div class="label-cell size-14 selected" data-type="product">전체</div>
+              <div class="label-cell size-14" data-type="product">명태 키링</div>
+              <div class="label-cell size-14" data-type="product">타일 자석</div>
+            </div>
+            <div class="label-row">
+              <div class="label-cell size-14" data-type="product">스티커</div>
+              <div class="label-cell size-14" data-type="product">자석 책갈피</div>
+              <div class="label-cell size-14" data-type="product">아크릴 키링</div>
+            </div>
+            <div class="label-row collapsed">
+              <div class="label-cell size-14" data-type="product">동글 키링</div>
+              <div class="label-cell size-14" data-type="product">키캡 키링</div>
+              <div class="label-cell size-14" data-type="product">마우스패드</div>
+            </div>
+            <div class="label-row collapsed">
+              <div class="label-cell size-14" data-type="product">카라비너</div>
+              <div class="label-cell size-14" data-type="product">띠깃발</div>
+              <div class="label-cell size-14" data-type="product">대형 깃발</div>
+            </div>
+            <div class="label-row collapsed">
+              <div class="label-cell size-14" data-type="product">손깃발</div>
+              <div class="label-cell size-14" data-type="product">신발끈</div>
+              <div class="label-cell size-14" data-type="product">스트랩</div>
+            </div>
+            <div class="label-row collapsed">
+              <div class="label-cell size-14" data-type="product">귀걸이</div>
+              <div class="label-cell size-14" data-type="product">뱃지</div>
+              <div class="label-cell size-14" data-type="product">목걸이</div>
+            </div>
+          </div>
+          <button class="label-more-btn" onclick="toggleLabels('product')">
+            <span class="label-more-text" id="productMoreText">더보기</span>
+            <span class="label-more-arrow" id="productMoreArrow">▼</span>
+          </button>
+        </div>
+
       </section>
 
       <!-- ── Contents ── -->
@@ -137,12 +174,15 @@
   </div>
 
   <script>
-    let labelsExpanded = false;
+    let flagExpanded = false;
+    let productExpanded = false;
+    let selectedFlag = '전체';
+    let selectedProduct = '전체';
     let cartCount = 0;
     let visibleCount = 10;
     let currentList = [];
 
-    const labelKeywords = {
+    const flagKeywords = {
       '전체':       null,
       '레인보우':   { 
         inc: ['레인보우', '무지개'], 
@@ -174,6 +214,27 @@
       '뉴트로이스': ['뉴트로이스'],
       '데미걸':     ['데미걸'],
       '데미보이':   ['데미보이'],
+    };
+
+    const productKeywords = {
+      '전체': null,
+      '명태 키링': ['명태 키링'],
+      '타일 자석': ['타일 자석', '호작도'],
+      '스티커': ['스티커'],
+      '자석 책갈피': ['자석책갈피', '자석 책갈피'],
+      '아크릴 키링': ['아크릴 키링'],
+      '동글 키링': ['동글 키링'],
+      '키캡 키링': ['키캡 키링'],
+      '마우스패드': ['마우스패드'],
+      '카라비너': ['카라비너'],
+      '띠깃발': ['띠깃발'],
+      '대형 깃발': ['대형 프라이드 깃발', '투쟁 깃발'],
+      '손깃발': ['손깃발'],
+      '신발끈': ['신발끈'],
+      '스트랩': ['스트랩'],
+      '귀걸이': ['귀걸이', '귀찌'],
+      '뱃지': ['뱃지', '브로치', '핀'],
+      '목걸이': ['목걸이']
     };
 
     function cardHtml(p) {
@@ -247,44 +308,65 @@
     }, { rootMargin: '0px' }); // 바닥에 완전히 닿았을 때 로드
       observer.observe(document.getElementById('scrollSentinel'));
 
-      document.getElementById('labelGrid').addEventListener('click', (e) => {
-        const cell = e.target.closest('.label-cell');
-        if (!cell) return;
+      document.querySelectorAll('.label-grid').forEach(grid => {
+        grid.addEventListener('click', (e) => {
+          const cell = e.target.closest('.label-cell');
+          if (!cell) return;
 
-        document.querySelectorAll('.label-cell').forEach(el => el.classList.remove('selected'));
-        cell.classList.add('selected');
+          // 클릭한 영역(그리드) 내에서만 선택 상태 변경
+          grid.querySelectorAll('.label-cell').forEach(el => el.classList.remove('selected'));
+          cell.classList.add('selected');
 
-        document.getElementById('searchInput').value = ''; // 카테고리 클릭 시 검색창 초기화
+          document.getElementById('searchInput').value = ''; // 필터 클릭 시 검색창 초기화
 
-        const label = cell.textContent.trim();
-        const keywords = labelKeywords[label];
+          if (cell.dataset.type === 'flag') {
+            selectedFlag = cell.textContent.trim();
+          } else if (cell.dataset.type === 'product') {
+            selectedProduct = cell.textContent.trim();
+          }
 
-        if (keywords === null) {
-          renderProducts(products);
-        } else if (Array.isArray(keywords)) {
-          const filtered = products.filter(p =>
-            keywords.some(kw => p.title.includes(kw))
-          );
-          renderProducts(filtered);
-        } else {
-          // inc(포함), exc(제외) 조건이 모두 있는 경우
-          const filtered = products.filter(p => {
-            const hasInc = keywords.inc.some(kw => p.title.includes(kw));
-            const hasExc = keywords.exc.some(kw => p.title.includes(kw));
-            return hasInc && !hasExc;
-          });
-          renderProducts(filtered);
-        }
+          filterProducts();
+        });
       });
     });
+
+    function filterProducts() {
+      let result = products;
+
+      // 1. 플래그(디자인) 교집합 필터
+      if (selectedFlag !== '전체') {
+        const fKw = flagKeywords[selectedFlag];
+        result = result.filter(p => {
+          if (Array.isArray(fKw)) {
+            return fKw.some(kw => p.title.includes(kw));
+          } else {
+            const hasInc = fKw.inc.some(kw => p.title.includes(kw));
+            const hasExc = fKw.exc.some(kw => p.title.includes(kw));
+            return hasInc && !hasExc;
+          }
+        });
+      }
+
+      // 2. 제품(종류) 교집합 필터
+      if (selectedProduct !== '전체') {
+        const pKw = productKeywords[selectedProduct];
+        result = result.filter(p => pKw.some(kw => p.title.includes(kw)));
+      }
+
+      renderProducts(result);
+    }
 
     // ── Search ────────────────────────────────────────────────
     function searchProducts() {
       const query = document.getElementById('searchInput').value.trim().toLowerCase();
       
-      // 카테고리 선택 상태를 '전체'로 초기화
+      // 검색 시 모든 카테고리 '전체'로 초기화
       document.querySelectorAll('.label-cell').forEach(el => el.classList.remove('selected'));
-      document.querySelector('.label-cell').classList.add('selected');
+      document.querySelectorAll('.label-grid').forEach(grid => {
+         grid.querySelector('.label-cell').classList.add('selected');
+      });
+      selectedFlag = '전체';
+      selectedProduct = '전체';
 
       if (!query) {
         renderProducts(products);
@@ -334,21 +416,29 @@
       }
     }
 
-    function toggleLabels() {
-      labelsExpanded = !labelsExpanded;
+    function toggleLabels(type) {
+      if (type === 'flag') {
+        flagExpanded = !flagExpanded;
+        updateToggleUI('flagGrid', 'flagMoreText', 'flagMoreArrow', flagExpanded);
+      } else {
+        productExpanded = !productExpanded;
+        updateToggleUI('productLabelGrid', 'productMoreText', 'productMoreArrow', productExpanded);
+      }
+    }
 
-      const textEl = document.getElementById('labelMoreText');
-      const arrowEl = document.getElementById('labelMoreArrow');
+    function updateToggleUI(gridId, textId, arrowId, isExpanded) {
+      const textEl = document.getElementById(textId);
+      const arrowEl = document.getElementById(arrowId);
 
-      document.querySelectorAll('#labelGrid .label-row').forEach((row, i) => {
+      document.querySelectorAll(`#${gridId} .label-row`).forEach((row, i) => {
         if (i >= 2) {
-          if (labelsExpanded) row.classList.remove('collapsed');
+          if (isExpanded) row.classList.remove('collapsed');
           else row.classList.add('collapsed');
         }
       });
 
-      textEl.textContent = labelsExpanded ? '닫기' : '더보기';
-      arrowEl.classList.toggle('up', labelsExpanded);
+      textEl.textContent = isExpanded ? '닫기' : '더보기';
+      arrowEl.classList.toggle('up', isExpanded);
     }
   </script>
   <script>
