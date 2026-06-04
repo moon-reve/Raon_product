@@ -96,6 +96,45 @@ body {
   display: flex;
 }
 
+/* ── Search Bar ── */
+.search-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.search-input-wrap {
+  display: flex;
+  align-items: center;
+  background: #FFFFFF;
+  border: 1px solid #C7C4D8;
+  border-radius: 8px;
+  padding: 8px 12px;
+}
+
+.search-input-wrap input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  font-family: 'Pretendard', sans-serif;
+  background: transparent;
+}
+
+.search-input-wrap input::placeholder {
+  color: #999999;
+}
+
+.search-input-wrap button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+}
+
 /* ── Section Label ── */
 .section-label {
   display: flex;
