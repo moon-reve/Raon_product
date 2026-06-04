@@ -144,7 +144,10 @@
 
     const labelKeywords = {
       '전체':       null,
-      '레인보우':   ['레인보우', '무지개'],
+      '레인보우':   { 
+        inc: ['레인보우', '무지개'], 
+        exc: ['트랜스젠더', '팬섹슈얼', '판섹슈얼', '바이섹슈얼', '바이', '논바이너리', '에이섹슈얼', '에이로맨틱', '에이로에이스', '에이젠더', '젠더플루이드', '젠더퀴어', '젠더플럭스', '젠더리스', '옴니섹슈얼', '폴리섹슈얼', '폴리아모리', '안드로진', '인터섹스', '데미걸', '데미보이', '데미섹슈얼', '데미로맨틱', '퀘스쳐너리', '앨라이', 'BDSM', '인클루시브', '부치', '게이']
+      },
       '게이':       ['게이'],
       '그레이로맨틱':['그레이로맨틱'],
       '팬섹슈얼':   ['팬섹슈얼', '판섹슈얼'],
@@ -258,10 +261,18 @@
 
         if (keywords === null) {
           renderProducts(products);
-        } else {
+        } else if (Array.isArray(keywords)) {
           const filtered = products.filter(p =>
             keywords.some(kw => p.title.includes(kw))
           );
+          renderProducts(filtered);
+        } else {
+          // inc(포함), exc(제외) 조건이 모두 있는 경우
+          const filtered = products.filter(p => {
+            const hasInc = keywords.inc.some(kw => p.title.includes(kw));
+            const hasExc = keywords.exc.some(kw => p.title.includes(kw));
+            return hasInc && !hasExc;
+          });
           renderProducts(filtered);
         }
       });
