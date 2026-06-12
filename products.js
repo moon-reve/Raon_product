@@ -1,6 +1,7 @@
 const IMG = 'https://contents.sixshop.com/thumbnails/uploadedFiles/33333/product/';
 
 const products = [
+  { id:'RO_DragonT_RB', title:'라온 프라이드 곤룡포 티셔츠 레인보우', price:'50,000원', img:'image_1781281862071_1000.jpeg' },
   // ── 무지개 인기 상품 ──────────────────────────────────────────────────────
   { id:'RO_meyoungkey_rb', title:'라온 액막이 명태 키링 - 무지개', price:'13,000원', img:'image_1780242629311_1000.jpg' },
   { id:'raon_carabiner_rainbow', title:'라온 아크릴 카라비너 - 무지개', price:'15,000원', img:'image_1780246306079_1000.jpg' },
@@ -77,7 +78,6 @@ const products = [
   { id:'RO_here_TG', title:'라온 여기있소 화살표 머리띠 트랜스젠더', price:'9,000원', img:'image_1780231404283_1000.jpg' },
 
   // -- 최신 업데이트 상품 ------------------------------------------------------
-  { id:'RO_DragonT_RB', title:'라온 프라이드 곤룡포 티셔츠 레인보우', price:'50,000원', img:'image_1781281862071_1000.jpeg' },
   { id:'Longflag_Polyamory', title:'라온 띠깃발 폴리아모리', price:'12,000원', img:'image_1781249914259_1000.jpeg' },
   { id:'Longflag_BDSM', title:'라온 띠깃발 BDSM', price:'12,000원', img:'image_1781249626589_1000.jpeg' },
   { id:'RO_BAG_RB', title:'라온 프라이드 에코백 레인보우', price:'21,000원', img:'image_1781260647832_1000.jpg' },
