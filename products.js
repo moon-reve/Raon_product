@@ -1,6 +1,12 @@
 const IMG = 'https://contents.sixshop.com/thumbnails/uploadedFiles/33333/product/';
 
 const products = [
+  // ── 무지개 인기 상품 ──────────────────────────────────────────────────────
+  { id:'RO_meyoungkey_rb', title:'라온 액막이 명태 키링 - 무지개', price:'13,000원', img:'image_1780242629311_1000.jpg' },
+  { id:'raon_carabiner_rainbow', title:'라온 아크릴 카라비너 - 무지개', price:'15,000원', img:'image_1780246306079_1000.jpg' },
+  { id:'RO_mgbookclip_rb', title:'라온 자석책갈피 - 레인보우', price:'4,000원', img:'image_1780238424042_1000.jpg' },
+  { id:'RO_here_RB', title:'라온 여기있소 화살표 머리띠 무지개', price:'9,000원', img:'image_1780230406417_1000.jpg' },
+
   // ── 라온 액막이 명태 키링 ──────────────────────────────────────────────────
   { id:'RO_meyoungkey_ad', title:'라온 액막이 명태 키링 - 안드로진', price:'13,000원', img:'image_1780245712866_1000.jpeg' },
   { id:'RO_meyoungkey_pl', title:'라온 액막이 명태 키링 - 폴리아모리', price:'13,000원', img:'image_1780246259198_1000.jpeg' },
@@ -23,10 +29,8 @@ const products = [
   { id:'RO_meyoungkey_Bi', title:'라온 액막이 명태 키링 - 바이', price:'13,000원', img:'image_1780243396836_1000.jpg' },
   { id:'RO_meyoungkey_aa', title:'라온 액막이 명태 키링 - 에이로에이스', price:'13,000원', img:'image_1780243318204_1000.jpg' },
   { id:'RO_meyoungkey_ar', title:'라온 액막이 명태 키링 - 에이로맨틱', price:'13,000원', img:'image_1780243181967_1000.jpg' },
-  { id:'RO_meyoungkey_rb', title:'라온 액막이 명태 키링 - 무지개', price:'13,000원', img:'image_1780242629311_1000.jpg' },
 
   // ── 아크릴 카라비너 ────────────────────────────────────────────────────────
-  { id:'raon_carabiner_rainbow', title:'라온 아크릴 카라비너 - 무지개', price:'15,000원', img:'image_1780246306079_1000.jpg' },
   { id:'raon_carabiner_agender',  title:'라온 아크릴 카라비너 - 에이젠더',     price:'15,000원', img:'image_1777813188702_1000.jpg' },
   { id:'raon_carabiner_asexual',  title:'라온 아크릴 카라비너 - 에이섹슈얼',   price:'15,000원', img:'image_1777813089671_1000.jpg' },
   { id:'raon_carabiner_aromatic', title:'라온 아크릴 카라비너 - 에이로맨틱',   price:'15,000원', img:'image_1777812800291_1000.jpg' },
@@ -57,14 +61,12 @@ const products = [
   { id:'RO_mgbookclip_qs', title:'라온 자석책갈피 - 퀘스쳐너리', price:'4,000원', img:'image_1780238868571_1000.jpg' },
   { id:'RO_mgbookclip_tg', title:'라온 자석책갈피 - 트랜스젠더', price:'4,000원', img:'image_1780238795084_1000.jpg' },
   { id:'RO_mgbookclip_p', title:'라온 자석책갈피 - 팬섹슈얼', price:'4,000원', img:'image_1780238675366_1000.jpg' },
-  { id:'RO_mgbookclip_rb', title:'라온 자석책갈피 - 레인보우', price:'4,000원', img:'image_1780238424042_1000.jpg' },
 
   // ── 여기있소 화살표 머리띠 ──────────────────────────────────────────────────
   { id:'RO_here_L', title:'라온 여기있소 화살표 머리띠 레즈비언', price:'9,000원', img:'image_1780231972607_1000.jpg' },
   { id:'RO_here_bi', title:'라온 여기있소 화살표 머리띠 바이', price:'9,000원', img:'image_1780231670156_1000.jpg' },
   { id:'RO_here_A', title:'라온 여기있소 화살표 머리띠 에이섹슈얼', price:'9,000원', img:'image_1780231538428_1000.jpg' },
   { id:'RO_here_TG', title:'라온 여기있소 화살표 머리띠 트랜스젠더', price:'9,000원', img:'image_1780231404283_1000.jpg' },
-  { id:'RO_here_RB', title:'라온 여기있소 화살표 머리띠 무지개', price:'9,000원', img:'image_1780230406417_1000.jpg' },
 
   // -- 최신 업데이트 상품 ------------------------------------------------------
   { id:'RO_DragonT_RB', title:'라온 프라이드 곤룡포 티셔츠 레인보우', price:'50,000원', img:'image_1781281862071_1000.jpeg' },
@@ -130,9 +132,6 @@ const products = [
   { id:'RO_rainbow_earring_GF', title:'라온 오버 더 프라이드 귀걸이 젠더플루이드', price:'8,000원', img:'image_1780234682631_1000.jpg' },
   { id:'RO_rainbow_earring_TG', title:'라온 오버 더 프라이드 귀걸이 트랜스젠더', price:'8,000원', img:'image_1780234597029_1000.jpg' },
   { id:'RO_rainbow_earring_P', title:'라온 오버 더 프라이드 귀걸이 판섹슈얼', price:'8,000원', img:'image_1780234494038_1000.jpg' },
-  { id:'RO_ball_03', title:'라온 프라이드 구슬 스프라이트 스마일', price:'9,000원', img:'image_1780233522130_1000.jpg' },
-  { id:'RO_ball_02', title:'라온 프라이드 구슬 키링 스마일', price:'9,000원', img:'image_1780233435056_1000.jpg' },
-  { id:'RO_ball_01', title:'라온 프라이드 구슬 키링', price:'9,000원', img:'image_1780233078061_1000.jpg' },
   { id:'RO_ite', title:'라온 프라이드 보타이', price:'8,000원', img:'image_1780232168114_1000.jpg' },
   { id:'RO_MP_P', title:'라온 프라이드 마우스패드 팬섹슈얼', price:'9,000원', img:'image_1779895435050_1000.jpg' },
   { id:'RO_MP_TG', title:'라온 프라이드 마우스패드 트랜스젠더', price:'9,000원', img:'image_1779894772381_1000.jpg' },
