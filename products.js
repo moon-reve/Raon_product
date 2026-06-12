@@ -452,7 +452,6 @@ const products = [
   { id:'rainbowhat',         title:'[라온] 반려동물의 무지개 뜨개모자', price:'15,000원', img:'image_1657725236916_1000.jpg' },
   { id:'rn2022_hipsack',     title:'[라온] 무지개 행성 힙색',           price:'35,000원', img:'image_1657725457706_1000.jpg' },
   { id:'rainbowcape',        title:'[라온] 반려동물의 무지개 케이프',   price:'15,000원', img:'image_1657725120394_1000.jpg' },
-  { id:'RO2022_285',         title:'[라온] 프라이드플래닛 가방',        price:'25,000원', img:'image_1652078686493_1000.png' },
   { id:'RO2022_sil3',        title:'[라온] 실리콘 팔찌 Pansexual',      price:'5,000원',  img:'image_1657182484463_1000.jpg' },
   { id:'RO2022_sil2',        title:'[라온] 실리콘 팔찌 Bisexual',       price:'5,000원',  img:'image_1657182384864_1000.jpg' },
   { id:'RO2022_sil',         title:'[라온] 실리콘 팔찌 Rainbow',        price:'5,000원',  img:'image_1657182064962_1000.jpg' },
