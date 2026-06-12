@@ -77,6 +77,76 @@ body {
   gap: 0;
 }
 
+/* ── Account Box ── */
+.account-box {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 16px 20px;
+  padding: 14px 16px;
+  background: #fff;
+  border: 1px solid #C7C4D8;
+  border-radius: 10px;
+}
+
+.account-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.account-bank {
+  font-size: 12px;
+  font-weight: 500;
+  color: #5F5E61;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+
+.account-number {
+  font-size: 17px;
+  font-weight: 700;
+  color: #1A1B22;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+}
+
+.account-copy-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  border: 1px solid #C7C4D8;
+  background: #fff;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.account-copy-toast {
+  position: absolute;
+  top: -10px;
+  right: 16px;
+  transform: translateY(0) scale(0.95);
+  opacity: 0;
+  background: #1A1B22;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+  pointer-events: none;
+}
+
+.account-copy-toast.show {
+  opacity: 1;
+  transform: translateY(-8px) scale(1);
+}
+
 /* ── Selection Bar ── */
 .selection-bar {
   display: flex;

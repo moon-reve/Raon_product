@@ -49,6 +49,21 @@
     <!-- ── Main (Scrollable) ── -->
     <main class="main">
 
+      <!-- 계좌번호 안내 -->
+      <div class="account-box">
+        <div class="account-info">
+          <div class="account-bank">한국씨티은행</div>
+          <div class="account-number" id="accountNumber">375-08510-263-01</div>
+        </div>
+        <button class="account-copy-btn" onclick="copyAccount()" aria-label="계좌번호 복사">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+            <rect x="6.5" y="6.5" width="9" height="9" rx="1.5" stroke="#5F5E61" stroke-width="1.4"/>
+            <path d="M11.5 6V3.5A1.5 1.5 0 0 0 10 2H3.5A1.5 1.5 0 0 0 2 3.5V10a1.5 1.5 0 0 0 1.5 1.5H6" stroke="#5F5E61" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <span class="account-copy-toast" id="accountCopyToast">복사됨</span>
+      </div>
+
       <!-- 전체선택 바 -->
       <div class="selection-bar">
         <div class="selection-label" onclick="toggleSelectAll()">
@@ -204,6 +219,35 @@
       saveCart([]);
       selected = {};
       render();
+    }
+
+    // 계좌번호 복사
+    function copyAccount() {
+      const number = document.getElementById('accountNumber').textContent;
+
+      const showToast = () => {
+        const toast = document.getElementById('accountCopyToast');
+        toast.classList.add('show');
+        setTimeout(() => toast.classList.remove('show'), 1200);
+      };
+
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(number).then(showToast).catch(() => fallbackCopy(number, showToast));
+      } else {
+        fallbackCopy(number, showToast);
+      }
+    }
+
+    function fallbackCopy(text, done) {
+      const textarea = document.createElement('textarea');
+      textarea.value = text;
+      textarea.style.position = 'fixed';
+      textarea.style.opacity = '0';
+      document.body.appendChild(textarea);
+      textarea.select();
+      try { document.execCommand('copy'); } catch (e) {}
+      document.body.removeChild(textarea);
+      done();
     }
 
     // 초기 렌더
