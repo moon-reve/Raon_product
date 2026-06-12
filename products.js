@@ -6,6 +6,13 @@ const products = [
   { id:'raon_carabiner_rainbow', title:'라온 아크릴 카라비너 - 무지개', price:'15,000원', img:'image_1780246306079_1000.jpg' },
   { id:'RO_mgbookclip_rb', title:'라온 자석책갈피 - 레인보우', price:'4,000원', img:'image_1780238424042_1000.jpg' },
   { id:'RO_here_RB', title:'라온 여기있소 화살표 머리띠 무지개', price:'9,000원', img:'image_1780230406417_1000.jpg' },
+  { id:'RO_magnet', title:'라온 타일 자석 무지개', price:'5,000원', img:'image_1780237867309_1000.jpg' },
+  { id:'RO_magnet_tiger', title:'라온 타일 자석 호작도', price:'6,000원', img:'image_1780242076854_1000.jpg' },
+  { id:'RO_ringearing_RB', title:'라온 플래그 링 귀걸이 - 레인보우 실버', price:'13,000원', img:'image_1781261858322_1000.jpg' },
+  { id:'RO_ringearing_RB2', title:'라온 플래그 링 귀걸이 - 레인보우 블랙', price:'13,000원', img:'image_1781262240640_1000.jpg' },
+  { id:'RO_MP_BR02', title:'라온 프라이드 마우스패드 무지개', price:'9,000원', img:'image_1779862100458_1000.jpg' },
+  { id:'RO_MP_BR01', title:'라온 프라이드 마우스패드 걱정없어!', price:'9,000원', img:'image_1779807748173_1000.jpg' },
+  { id:'raon_griptok_rb', title:'라온 프라이드플래닛 맥세이프 그립톡 무지개',     price:'18,000원', img:'image_1778030781514_1000.jpg' },
 
   // ── 라온 액막이 명태 키링 ──────────────────────────────────────────────────
   { id:'RO_meyoungkey_ad', title:'라온 액막이 명태 키링 - 안드로진', price:'13,000원', img:'image_1780245712866_1000.jpeg' },
@@ -70,8 +77,6 @@ const products = [
 
   // -- 최신 업데이트 상품 ------------------------------------------------------
   { id:'RO_DragonT_RB', title:'라온 프라이드 곤룡포 티셔츠 레인보우', price:'50,000원', img:'image_1781281862071_1000.jpeg' },
-  { id:'RO_ringearing_RB2', title:'라온 플래그 링 귀걸이 - 레인보우 블랙', price:'13,000원', img:'image_1781262240640_1000.jpg' },
-  { id:'RO_ringearing_RB', title:'라온 플래그 링 귀걸이 - 레인보우 실버', price:'13,000원', img:'image_1781261858322_1000.jpg' },
   { id:'Longflag_Polyamory', title:'라온 띠깃발 폴리아모리', price:'12,000원', img:'image_1781249914259_1000.jpeg' },
   { id:'Longflag_BDSM', title:'라온 띠깃발 BDSM', price:'12,000원', img:'image_1781249626589_1000.jpeg' },
   { id:'RO_BAG_RB', title:'라온 프라이드 에코백 레인보우', price:'21,000원', img:'image_1781260647832_1000.jpg' },
@@ -114,7 +119,6 @@ const products = [
   { id:'RO_meyoung_nb', title:'라온 액막이 명태 스티커 - 논바이너리', price:'3,000원', img:'image_1780240486936_1000.jpg' },
   { id:'RO_meyoung_bi', title:'라온 액막이 명태 스티커 - 바이', price:'3,000원', img:'image_1780240427299_1000.jpg' },
   { id:'RO_meyoung_rb', title:'라온 액막이 명태 스티커 - 레인보우', price:'3,000원', img:'image_1780240194671_1000.jpg' },
-  { id:'RO_magnet_tiger', title:'라온 타일 자석 호작도', price:'6,000원', img:'image_1780242076854_1000.jpg' },
   { id:'RO_magnet_AG', title:'라온 타일 자석 에이젠더', price:'5,000원', img:'image_1780241882067_1000.jpg' },
   { id:'RO_magnet_A', title:'라온 타일 자석 에이섹슈얼', price:'5,000원', img:'image_1780241637546_1000.jpg' },
   { id:'RO_magnet_AA', title:'라온 타일 자석 에이로에이스', price:'5,000원', img:'image_1780240795090_1000.jpg' },
@@ -147,8 +151,6 @@ const products = [
   { id:'RO_MP_Bi', title:'라온 프라이드 마우스패드 바이', price:'9,000원', img:'image_1779862724493_1000.jpg' },
   { id:'RO_MP_L', title:'라온 프라이드 마우스패드 레즈비언', price:'9,000원', img:'image_1779862612961_1000.jpg' },
   { id:'RO_MP_NB', title:'라온 프라이드 마우스패드 논바이너리', price:'9,000원', img:'image_1779862452205_1000.jpg' },
-  { id:'RO_MP_BR02', title:'라온 프라이드 마우스패드 무지개', price:'9,000원', img:'image_1779862100458_1000.jpg' },
-  { id:'RO_MP_BR01', title:'라온 프라이드 마우스패드 걱정없어!', price:'9,000원', img:'image_1779807748173_1000.jpg' },
   { id:'RO_magnet_DR', title:'라온 타일 자석 데미로맨틱', price:'5,000원', img:'image_1780239189007_1000.jpg' },
   { id:'RO_magne_NB', title:'라온 타일 자석 논바이너리', price:'5,000원', img:'image_1780239093919_1000.jpg' },
   { id:'RO_magnet_ally', title:'라온 타일 자석 앨라이', price:'5,000원', img:'image_1780238913387_1000.jpg' },
@@ -164,7 +166,6 @@ const products = [
   { id:'RO2023fans_A', title:'라온 프라이드 손부채 무성애', price:'5,000원', img:'image_1779602741030_1000.jpg' },
   { id:'RO_magnet_TG', title:'라온 타일 자석 트랜스젠더', price:'5,000원', img:'image_1780238219558_1000.jpg' },
   { id:'RO_magnet_P', title:'라온 타일 자석 팬섹슈얼', price:'5,000원', img:'image_1780238112253_1000.jpg' },
-  { id:'RO_magnet', title:'라온 타일 자석 무지개', price:'5,000원', img:'image_1780237867309_1000.jpg' },
   { id:'raon_allyear_rb', title:'라온 퀴어올이어 뱃지 무지개', price:'12,000원', img:'image_1779595362860_1000.jpg' },
   { id:'raon_purcat_rb', title:'라온 PURRIDE 뱃지 무지개', price:'12,000원', img:'image_1779546618609_1000.jpg' },
   { id:'raon_cat_tg', title:'라온 고양이 뱃지 트랜스젠더', price:'12,000원', img:'image_1779546435590_1000.jpg' },
@@ -190,7 +191,6 @@ const products = [
 
   // ── 그립톡 ─────────────────────────────────────────────────────────────────
   { id:'raon_griptok_tg', title:'라온 프라이드플래닛 맥세이프 그립톡 트랜스젠더', price:'18,000원', img:'image_1778030762329_1000.jpg' },
-  { id:'raon_griptok_rb', title:'라온 프라이드플래닛 맥세이프 그립톡 무지개',     price:'18,000원', img:'image_1778030781514_1000.jpg' },
 
   // ── 블럭 목걸이 ────────────────────────────────────────────────────────────
   { id:'RO2022_-legoneckless-P',        title:'라온 블럭 목걸이 - 판섹슈얼',  price:'13,000원', img:'image_1777896251060_1000.jpg' },
