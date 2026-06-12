@@ -341,7 +341,6 @@ const products = [
   { id:'raon_planet_NT', title:'라온 프라이드 플래닛 아크릴 키링 - 뉴트로이스', price:'7,000원', img:'image_1749741435445_1000.jpg' },
 
   // ── 투쟁 깃발 & 스티커 ────────────────────────────────────────────────────
-  { id:'raon_flag_fist',    title:'[라온] 투쟁 깃발 - 2종',          price:'9,000원',  img:'image_1738248063757_1000.png' },
   { id:'raon_fist_seal_R',  title:'[라온] 투쟁 스티커 - 레인보우',   price:'3,000원',  img:'image_1737707320959_1000.png' },
   { id:'raon_fist_seal_Neu',title:'[라온] 투쟁 스티커 - 뉴트로이스', price:'3,000원',  img:'image_1737707030986_1000.png' },
   { id:'raon_fist_seal_O',  title:'[라온] 투쟁 스티커 - 옴니섹슈얼',price:'3,000원',  img:'image_1737705256858_1000.png' },
@@ -458,22 +457,14 @@ const products = [
   { id:'RO2022_ril3',        title:'[라온] 아크릴체인 키링 Rainbow',    price:'11,000원', img:'image_1657181752551_1000.jpg' },
   { id:'RO2022_mattchain3',  title:'[라온] 매트체인 키링 Rainbow',      price:'11,000원', img:'image_1657180527788_1000.jpg' },
   { id:'RO2022_knittingrainbow',title:'[라온] 무지개 뜨개실 옷핀',      price:'7,000원',  img:'image_1657178451185_1000.jpg' },
-  { id:'raon2022_pridewraps',title:'[라온] 프라이드 아대 7종',           price:'7,000원',  img:'image_1652692684521_1000.png' },
   { id:'RO2022_hats',        title:'[라온] 프라이드플래닛 빅사이즈 버킷햇', price:'32,000원', img:'image_1652076673551_1000.png' },
-
 
   // ── 마스크스트랩/케이스/슈슈/스티커/귀걸이/팔찌 (2020) ───────────────────
 
   { id:'RN2020_rainbowjar',   title:'라온 무지개 항아리 뱃지',               price:'8,000원',  img:'image_1594102656060_1000.jpg' },
   { id:'RN2020_econet',       title:'라온 성글지만 튼튼해 주머니',           price:'7,000원',  img:'image_1589868708065_1000.jpg' },
-  { id:'RN2020_eye',          title:'라온 프라이드 큐빅 안경줄 8종',         price:'13,000원', img:'image_1583725197363_1000.jpg' },
-  { id:'knotbrslt',           title:'라온 전통매듭팔찌 3종',                  price:'8,000원',  img:'image_1565679286178_1000.jpg' },
   { id:'glasses',             title:'라온 안경 프레임',                        price:'4,000원',  img:'image_1564727698786_1000.jpg' },
   { id:'fushtape5',           title:'라온 마스킹테이프 (후시아)',              price:'3,000원',  origPrice:'4,000원', img:'image_1581670400309_1000.jpg', onSale:true },
   { id:'cattape5',            title:'라온 마스킹테이프 (고양이)',              price:'3,000원',  origPrice:'4,000원', img:'image_1581670241156_1000.jpg', onSale:true },
   { id:'flagtape15',          title:'라온 마스킹테이프 (깃발)',               price:'4,000원',  origPrice:'6,000원', img:'image_1559101131864_1000.jpg', onSale:true },
-
-  // ── 구형 상품 ──────────────────────────────────────────────────────────────
-
-  { id:'RN2018_line', title:'라온 무지개 매듭 안경줄 8종',     price:'13,000원', img:'image_1539009190368_1000.jpg' },
 ];
